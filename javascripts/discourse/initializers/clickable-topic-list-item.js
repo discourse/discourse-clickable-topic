@@ -32,15 +32,24 @@ export default {
             return this.navigateToTopic(topic, target.attr("href"))
           }
 
-          // make full row click target
-          if (target.is("td") || target.hasClass("link-bottom-line")) {
+          console.log(target);
+          // make full row click target on Desktop
+          if (target.is("td") || target.hasClass("link-bottom-line") || target.is("tr")) {
             if (wantsNewWindow(event)) {
               return true;
             }
             return this.navigateToTopic(topic, topic.lastUnreadUrl);
           }
 
-          if (target.closes("a.topic-status").length === 1) {
+          // make full row click target on mobile
+          if (target.hasClass("right") || target.hasClass("clearfix")) {
+            if (wantsNewWindow(event)) {
+              return true;
+            }
+            return this.navigateToTopic(topic, topic.lastUnreadUrl);
+          }
+
+          if (target.closest("a.topic-status").length === 1) {
             this.topic.togglePinnedForUser();
             return false;
           }
