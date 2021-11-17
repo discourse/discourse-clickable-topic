@@ -33,7 +33,7 @@ export default {
           }
 
           // make full row click target on Desktop
-          if (target.hasClass("topic-list-data") || target.hasClass("link-bottom-line") || target.hasClass("topic-list-row")) {
+          if (target.hasClass("topic-list-data") || target.hasClass("link-bottom-line") || target.hasClass("topic-list-item")) {
             if (wantsNewWindow(event)) {
               return true;
             }
