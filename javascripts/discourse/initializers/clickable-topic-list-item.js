@@ -32,9 +32,8 @@ export default {
             return this.navigateToTopic(topic, target.attr("href"))
           }
 
-          console.log(target);
           // make full row click target on Desktop
-          if (target.is("td") || target.hasClass("link-bottom-line") || target.is("tr")) {
+          if (target.hasClass("topic-list-data") || target.hasClass("link-bottom-line") || target.hasClass("topic-list-item")) {
             if (wantsNewWindow(event)) {
               return true;
             }
