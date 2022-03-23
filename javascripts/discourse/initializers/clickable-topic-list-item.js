@@ -7,6 +7,8 @@ export default {
   initialize() {
     withPluginApi("0.8.14", api => {
       api.modifyClass("component:topic-list-item", {
+        pluginId: "discourse-clickable-topic",
+
         click(event) {
           const result = this.showEntrance(event);
           
@@ -58,6 +60,8 @@ export default {
       });
 
       api.modifyClass("component:latest-topic-list-item", {
+        pluginId: "discourse-clickable-topic",
+
         click(event) {
           // for discourse events, undefined has a different meaning than false
           if (this.showEntrance(event) === false) return false;
