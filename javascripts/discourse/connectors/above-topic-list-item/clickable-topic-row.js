@@ -16,7 +16,7 @@ export default class extends Component {
     const clickTargets = [
       "topic-list-data",
       "link-bottom-line",
-      "topic-list-item"
+      "topic-list-item",
     ];
 
     if (this.site.mobileView) {
