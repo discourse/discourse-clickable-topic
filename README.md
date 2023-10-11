@@ -1,4 +1,4 @@
-# Discourse Clicable Topic Component
+# Discourse Clickable Topic Component
 This component makes the entire area of a `topic-list-item` clickable, as opposed to just the title.
 
 ![Discourse Clickable Topic Preivew](readme-assets/preview.gif)
