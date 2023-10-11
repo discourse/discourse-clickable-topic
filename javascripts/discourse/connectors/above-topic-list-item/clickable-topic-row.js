@@ -20,7 +20,7 @@ export default class extends Component {
     ];
 
     if (this.site.mobileView) {
-      clickTargets.push("right", "clearfix");
+      clickTargets.push("topic-item-metadata", "topic-item-stats");
     }
 
     if (clickTargets.some((t) => targetElement.classList.contains(t))) {
