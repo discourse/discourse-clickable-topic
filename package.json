@@ -1,7 +1,7 @@
 {
   "name": "TODO",
   "version": "0.0.1",
-  "repository": "TODO",
+  "repository": "https://github.com/discourse/discourse-clickable-topic",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
