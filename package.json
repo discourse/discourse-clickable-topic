@@ -1,0 +1,10 @@
+{
+  "name": "discourse-clickable-topic",
+  "version": "0.0.1",
+  "repository": "https://github.com/discourse/discourse-clickable-topic",
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "^3.2.0"
+  }
+}
