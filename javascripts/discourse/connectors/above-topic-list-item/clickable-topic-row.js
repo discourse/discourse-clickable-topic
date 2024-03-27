@@ -1,9 +1,9 @@
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
-import { wantsNewWindow } from "discourse/lib/intercept-click";
+import { service } from "@ember/service";
 import { navigateToTopic } from "discourse/components/topic-list-item";
+import { wantsNewWindow } from "discourse/lib/intercept-click";
 import { bind } from "discourse-common/utils/decorators";
-import { inject as service } from "@ember/service";
 
 export default class extends Component {
   @service site;
