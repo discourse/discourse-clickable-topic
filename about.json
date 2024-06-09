@@ -1,7 +1,7 @@
 {
-  "name": "Discourse Clickable Topic",
-  "about_url": null,
-  "license_url": null,
+  "name": "Clickable Topic",
+  "about_url": "https://meta.discourse.org/t/clickable-topic/183339",
+  "license_url": "https://github.com/discourse/discourse-clickable-topic/blob/main/LICENSE",
   "component": true,
   "assets": {
   },
