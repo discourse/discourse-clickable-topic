@@ -1,8 +1,8 @@
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
 import { navigateToTopic } from "discourse/components/topic-list-item";
+import { bind } from "discourse/lib/decorators";
 import { wantsNewWindow } from "discourse/lib/intercept-click";
-import { bind } from "discourse-common/utils/decorators";
 
 export default class extends Component {
   @bind
