@@ -1,8 +1,8 @@
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
-import { navigateToTopic } from "discourse/components/topic-list-item";
 import { bind } from "discourse/lib/decorators";
 import { wantsNewWindow } from "discourse/lib/intercept-click";
+import DiscourseURL from "discourse/lib/url";
 
 export default class extends Component {
   @bind
@@ -14,7 +14,7 @@ export default class extends Component {
       if (wantsNewWindow(event)) {
         return true;
       }
-      return navigateToTopic.call(this, topic, topic.lastUnreadUrl);
+      DiscourseURL.routeTo(topic.lastUnreadUrl || topic.url);
     }
   }
 
