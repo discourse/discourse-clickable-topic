@@ -2,6 +2,6 @@
 .latest-topic-list-item {
   &:hover {
     cursor: pointer;
-    background: rgba(var(--primary-rgb), 0.025);
+    background: rgb(var(--primary-rgb), 0.025);
   }
 }
